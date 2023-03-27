@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="site.js"></script>
+    <title>Ecriptador</title>
+</head>
+<body class="spaceRow">
+    <div class="layout spaceRow spaceColumn">
+        <div  class="content">
+            <header  class="header spacePadding">
+                <img class="imagenLogo" src="./imagenes/image(4).svg" alt="logo"/>
+            </header>
+            <main class="containerEncriptador spaceRow">
+                <textarea
+                id="texto"
+                class="texto"
+                cols="2"
+                rows="3"
+                name="textarea"
+                placeholder="Ingrese en texto aqui"
+                required
+                autofocus
+                onclick=""
+                ></textarea>
+            </main>
+            <footer class="footer spaceRow">
+                <section  class="containerButton">
+                    <section  class="containerImagenParrafo">
+                        <img class="imagenInfo" src="./imagenes/image(6).svg" alt="muñeco"/>
+                        <p class="parrafo1"> {parrafo1} </p>
+                    </section>
+                    <section class="wraperButton">
+                        <button onclick="encriptador()" id="encriptar" class="buttonOne">      {button1}</button>
+                        <button onclick="desencriptador()" id="desencriptar" class="buttonTwo">{button2}</button>
+                    </section>
+                </section>
+            </footer>
+        </div>
+        <sidebar class="sider spaceColumn">
+            <div id="resultEncriptador" class="wrapperMuneco">
+                <img class="muneco" src="./imagenes/image(2).svg" alt="muñeco"/>
+                <p class="parrafo2"> {parrafo2} </p>
+                <p class="parrafo3"> {parrafo3} </p>
+            </div>
+            <textarea class="texto" id="mensaje" placeholder="Ingresa un texto valido">  </textarea>
+            <button onclick="copiar()" id="copiar" class="buttonThree"> {button3} </button>            
+        </sidebar>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
